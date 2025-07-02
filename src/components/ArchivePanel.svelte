@@ -19,6 +19,7 @@ interface Post {
 	data: {
 		title: string;
 		tags: string[];
+		categories?: string[];
 		category?: string;
 		published: Date;
 	};
@@ -53,13 +54,22 @@ onMount(async () => {
 	}
 
 	if (categories.length > 0) {
-		filteredPosts = filteredPosts.filter(
-			(post) => post.data.category && categories.includes(post.data.category),
-		);
+		filteredPosts = filteredPosts.filter((post) => {
+			const path = Array.isArray(post.data.categories)
+				? post.data.categories.map((c) => c.trim()).join("/")
+				: post.data.category?.trim();
+			return path ? categories.includes(path) : false;
+		});
 	}
 
 	if (uncategorized) {
-		filteredPosts = filteredPosts.filter((post) => !post.data.category);
+		filteredPosts = filteredPosts.filter(
+			(post) =>
+				!post.data.category &&
+				!(
+					Array.isArray(post.data.categories) && post.data.categories.length > 0
+				),
+		);
 	}
 
 	const grouped = filteredPosts.reduce(

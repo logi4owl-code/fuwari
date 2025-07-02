@@ -66,7 +66,7 @@ published: 2023-09-09
 description: นี่คือโพสต์แรกของเว็บบล็อก Astro อันใหม่ของฉัน
 image: ./cover.jpg
 tags: [Foo, Bar]
-category: Front-end
+categories: [Front-end]
 draft: false
 lang: jp      # เขียนค่านี้เมื่อภาษาของโพสต์นั้นๆ แตกต่างจากภาษาของเว็บไซต์ที่ตั้งค่าไว้ใน `config.ts` เท่านั้น
 ---
