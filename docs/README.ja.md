@@ -19,8 +19,8 @@
 
 ## 👀 以下が必要
 
-- Node.js <= 22
-- pnpm <= 9
+- Node.js >= 20
+- bun >= 1
 
 ## 🚀 使用方法 1
 
@@ -44,16 +44,16 @@ deno run -A npm:create-fuwari@latest
 ```
 
 1. `src/config.ts` ファイルを編集する事でブログを自分好みにカスタマイズ出来ます。
-2. `pnpm new-post <filename>` で新しい記事を作成し、`src/content/posts/`.フォルダ内で編集します。
+2. `bun run new-post <filename>` で新しい記事を作成し、`src/content/posts/`.フォルダ内で編集します。
 3. 作成したブログをVercel、Netlify、GitHub Pagesなどにデプロイするには[ガイド](https://docs.astro.build/ja/guides/deploy/)に従って下さい。加えて、別途デプロイを行う前に `astro.config.mjs` を編集してサイト構成を変更する必要があります。
 
 ## 🚀 使用方法 2
 
 1. [テンプレート](https://github.com/saicaca/fuwari/generate)から新しいリポジトリを作成するかCloneをします。
-2. ブログをローカルで編集するには、リポジトリをクローンした後、`pnpm install` と `pnpm add sharp` を実行して依存関係をインストールします。  
-   - [pnpm](https://pnpm.io) がインストールされていない場合は `npm install -g pnpm` で導入可能です。
+2. ブログをローカルで編集するには、リポジトリをクローンした後、`bun install` を実行して依存関係をインストールします。  
+   - [bun](https://bun.sh) がインストールされていない場合は公式サイトを参照して下さい。
 3. `src/config.ts` ファイルを編集する事でブログを自分好みにカスタマイズ出来ます。
-4. `pnpm new-post <filename>` で新しい記事を作成し、`src/content/posts/`.フォルダ内で編集します。
+4. `bun run new-post <filename>` で新しい記事を作成し、`src/content/posts/`.フォルダ内で編集します。
 5. 作成したブログをVercel、Netlify、GitHub Pagesなどにデプロイするには[ガイド](https://docs.astro.build/ja/guides/deploy/)に従って下さい。加えて、別途デプロイを行う前に `astro.config.mjs` を編集してサイト構成を変更する必要があります。
 
 ## ⚙️ 記事のフロントマター
@@ -76,10 +76,10 @@ draft: false
 
 | Command                             | Action                                      |
 |:------------------------------------|:--------------------------------------------|
-| `pnpm install` AND `pnpm add sharp` | 依存関係のインストール                                 |
-| `pnpm dev`                          | `localhost:4321` で開発用ローカルサーバーを起動            |
-| `pnpm build`                        | `./dist/` にビルド内容を出力                         |
-| `pnpm preview`                      | デプロイ前の内容をローカルでプレビュー                         |
-| `pnpm new-post <filename>`          | 新しい投稿を作成                                    |
-| `pnpm astro ...`                    | `astro add`, `astro check` の様なコマンドを実行する際に使用 |
-| `pnpm astro --help`                 | Astro CLIのヘルプを表示                            |
+| `bun install`                       | 依存関係のインストール                                 |
+| `bun run dev`                       | `localhost:4321` で開発用ローカルサーバーを起動            |
+| `bun run build`                     | `./dist/` にビルド内容を出力                         |
+| `bun run preview`                   | デプロイ前の内容をローカルでプレビュー                         |
+| `bun run new-post <filename>`       | 新しい投稿を作成                                    |
+| `bun run astro ...`                 | `astro add`, `astro check` の様なコマンドを実行する際に使用 |
+| `bun run astro --help`              | Astro CLIのヘルプを表示                            |
