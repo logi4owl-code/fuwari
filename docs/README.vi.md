@@ -30,10 +30,10 @@ Một mẫu blog tĩnh được xây bằng [Astro](https://astro.build).
        bun create fuwari@latest
        deno run -A npm:create-fuwari@latest
        ```
-2. Để chỉnh sửa blog của bạn trên máy cục bộ, hãy clone kho lưu trữ của bạn, chạy lệnh `pnpm install` để cài đặt các phụ thuộc..
-    - Cài đặt [pnpm](https://pnpm.io) `npm install -g pnpm` nếu chưa có.
+2. Để chỉnh sửa blog của bạn trên máy cục bộ, hãy clone kho lưu trữ của bạn, chạy lệnh `bun install` để cài đặt các phụ thuộc.
+    - Cài đặt [bun](https://bun.sh) nếu chưa có.
 3. Chỉnh sửa tệp cấu hình `src/config.ts` để tùy chỉnh blog của bạn.
-4. Chạy `pnpm new-post <filename>` để tạo một bài viết mới và chỉnh sửa nó trong `src/content/posts/`.
+4. Chạy `bun run new-post <filename>` để tạo một bài viết mới và chỉnh sửa nó trong `src/content/posts/`.
 5. Triển khai blog của bạn lên Vercel, Netlify, GitHub Pages, etc. theo [chỉ dẫn](https://docs.astro.build/en/guides/deploy/). Bạn cần chỉnh sửa cấu hình trang web trong `astro.config.mjs` trước khi triển khai.
 
 ## 📝 Tiêu đề đầy đủ của bài viết
@@ -63,17 +63,17 @@ Ngoài việc Astro đã có hỗ trợ mặc định cho [Markdown vị Github]
 
 Tất cả các lệnh được chạy từ thư mục gốc của dự án, từ một bảng điều khiển:
 
-| Lệnh                    | Mục đích                                              |
-|:---------------------------|:----------------------------------------------------|
-| `pnpm install`             | Cài đặt các phụ thuộc                               |
-| `pnpm dev`                 | Khởi động máy chủ cục bộ tại `localhost:4321`         |
-| `pnpm build`               | Xây dựng trang web của bạn vào `./dist/`             |
-| `pnpm preview`             | Xem trước bản web cục bộ của bạn, trước khi triển khai        |
-| `pnpm check`               | Chạy kiểm tra lỗi trong mã của bạn                 |
-| `pnpm format`              | Định dạng mã của bạn bằng Biome                       |
-| `pnpm new-post <filename>` | Tạo một bài viết mới                               |
-| `pnpm astro ...`           | Chạy các lệnh CLI như `astro add`, `astro check`    |
-| `pnpm astro --help`        | Nhận trợ giúp sử dụng Astro CLI                       |
+| Lệnh                           | Mục đích                                              |
+|:-------------------------------|:----------------------------------------------------|
+| `bun install`                  | Cài đặt các phụ thuộc                               |
+| `bun run dev`                  | Khởi động máy chủ cục bộ tại `localhost:4321`         |
+| `bun run build`                | Xây dựng trang web của bạn vào `./dist/`             |
+| `bun run preview`              | Xem trước bản web cục bộ của bạn, trước khi triển khai        |
+| `bun run check`                | Chạy kiểm tra lỗi trong mã của bạn                 |
+| `bun run format`               | Định dạng mã của bạn bằng Biome                       |
+| `bun run new-post <filename>`  | Tạo một bài viết mới                               |
+| `bun run astro ...`            | Chạy các lệnh CLI như `astro add`, `astro check`    |
+| `bun run astro --help`         | Nhận trợ giúp sử dụng Astro CLI                       |
 
 ## ✏️ Đóng góp
 

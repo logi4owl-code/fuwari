@@ -48,10 +48,10 @@ Template blog statis yang dibangun dengan [Astro](https://astro.build).
         # deno
         deno run -A npm:create-fuwari@latest
         ```
-2. Untuk mengedit blog secara lokal, klon repositori kamu, jalankan `pnpm install` untuk instalasi dependensi.
-    - Install [pnpm](https://pnpm.io) `npm install -g pnpm` jika belum punya.
+2. Untuk mengedit blog secara lokal, klon repositori kamu, jalankan `bun install` untuk instalasi dependensi.
+    - Install [bun](https://bun.sh) jika belum punya.
 3. Edit file konfigurasi `src/config.ts` untuk menyesuaikan blog.
-4. Jalankan `pnpm new-post <nama-file>` untuk membuat postingan baru dan edit di `src/content/posts/`.
+4. Jalankan `bun run new-post <nama-file>` untuk membuat postingan baru dan edit di `src/content/posts/`.
 5. Deploy blog ke Vercel, Netlify, GitHub Pages, dll. sesuai [panduan](https://docs.astro.build/en/guides/deploy/). Jangan lupa edit konfigurasi situs di `astro.config.mjs` sebelum deploy.
 
 ## 📝 Frontmatter Postingan
@@ -81,17 +81,17 @@ Selain dukungan default Astro untuk [GitHub Flavored Markdown](https://github.gi
 
 Semua perintah dijalankan dari root proyek, via terminal:
 
-| Perintah                     | Aksi                                                      |
-|:-----------------------------|:----------------------------------------------------------|
-| `pnpm install`               | Instalasi dependensi                                      |
-| `pnpm dev`                   | Menjalankan server dev lokal di `localhost:4321`          |
-| `pnpm build`                 | Build untuk produksi ke folder `./dist/`                  |
-| `pnpm preview`               | Pratinjau hasil build sebelum deploy                      |
-| `pnpm check`                 | Cek error atau masalah di kode                            |
-| `pnpm format`                | Format kode dengan Biome                                  |
-| `pnpm new-post <nama-file>`  | Membuat postingan baru                                    |
-| `pnpm astro ...`             | Jalankan perintah CLI seperti `astro add`, `astro check`  |
-| `pnpm astro --help`          | Bantuan menggunakan Astro CLI                             |
+| Perintah                         | Aksi                                                      |
+|:---------------------------------|:----------------------------------------------------------|
+| `bun install`                    | Instalasi dependensi                                      |
+| `bun run dev`                    | Menjalankan server dev lokal di `localhost:4321`          |
+| `bun run build`                  | Build untuk produksi ke folder `./dist/`                  |
+| `bun run preview`                | Pratinjau hasil build sebelum deploy                      |
+| `bun run check`                  | Cek error atau masalah di kode                            |
+| `bun run format`                 | Format kode dengan Biome                                  |
+| `bun run new-post <nama-file>`   | Membuat postingan baru                                    |
+| `bun run astro ...`              | Jalankan perintah CLI seperti `astro add`, `astro check`  |
+| `bun run astro --help`           | Bantuan menggunakan Astro CLI                             |
 
 ## ✏️ Kontribusi
 
