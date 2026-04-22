@@ -27,20 +27,7 @@ Un tema estático para blogs construido con [Astro](https://astro.build).
 Inicializa el proyecto localmente usando [create-fuwari](https://github.com/L4Ph/create-fuwari).
 
 ```sh
-# npm
-npm create fuwari@latest.
-
-# yarn
-yarn create fuwari.
-
-# pnpm
-pnpm create fuwari@latest
-
-# bun
 bun create fuwari@latest
-
-# deno
-deno run -A npm:create-fuwari@latest
 ```
 
 1. Edita el archivo de configuración `src/config.ts` para personalizar tu blog.

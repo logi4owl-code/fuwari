@@ -27,20 +27,7 @@
 使用 [create-fuwari](https://github.com/L4Ph/create-fuwari) 在本地初始化项目。
 
 ```sh
-# npm
-npm create fuwari@latest
-
-# yarn
-yarn create fuwari
-
-# pnpm
-pnpm create fuwari@latest
-
-# bun
 bun create fuwari@latest
-
-# deno
-deno run -A npm:create-fuwari@latest
 ```
 
 1. 通过配置文件 `src/config.ts` 自定义博客

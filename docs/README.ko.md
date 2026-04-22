@@ -21,13 +21,9 @@
 ## 🚀 시작하기
 1. 블로그 저장소를 생성하세요:
    - 이 템플릿에서 [새 저장소를 생성](https://github.com/saicaca/fuwari/generate)하거나 이 저장소를 포크하세요.
-   - 또는 다음 명령어 중 하나를 실행하세요:
+   - 또는 다음 명령어를 실행하세요:
    ```sh
-       npm create fuwari@latest
-       yarn create fuwari
-       pnpm create fuwari@latest
        bun create fuwari@latest
-       deno run -A npm:create-fuwari@latest
    ```
 2. 로컬에서 블로그를 수정하려면, 저장소를 복제하고 `bun install`을 실행하여 종속성을 설치하세요.
    - [bun](https://bun.sh)이 설치되어 있지 않다면 공식 사이트를 참고하여 설치하세요.

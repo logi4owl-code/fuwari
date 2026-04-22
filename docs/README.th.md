@@ -22,13 +22,9 @@
 
 1. สร้าง repository ใหม่สำหรับบล็อกของคุณ:
     - [Generate repository ใหม่](https://github.com/saicaca/fuwari/generate) ขึ้นมาจากแม่แบบนี้ หรือจะ fork repository นี้ก็ได้
-    - หรือจะสร้างโดยการเลือกรันคำสั่งต่อไปนี้ คำสั่งใดคำสั่งหนึ่ง:
+    - หรือจะสร้างโดยการรันคำสั่งต่อไปนี้:
        ```sh
-       npm create fuwari@latest
-       yarn create fuwari
-       pnpm create fuwari@latest
        bun create fuwari@latest
-       deno run -A npm:create-fuwari@latest
        ```
 2. เริ่มแก้ไขบล็อกของคุณแบบ local โดยการ clone repository ของคุณ (จากข้อ 1) ไว้ในเครื่องของคุณ แล้วรันคำสั่ง `bun install` เพื่อติดตั้ง dependencies ที่จำเป็น
     - ติดตั้ง [bun](https://bun.sh) ก่อน ถ้ายังไม่เคยติดตั้ง

@@ -31,23 +31,10 @@ Template blog statis yang dibangun dengan [Astro](https://astro.build).
 
 1. Buat repositori blog kamu:
     - [Generate repositori baru](https://github.com/saicaca/fuwari/generate) dari template ini atau fork repositori ini.
-    - Atau jalankan salah satu perintah berikut:
+    - Atau jalankan perintah berikut:
        ```sh
-        # npm
-        npm create fuwari@latest.
-
-        # yarn
-        yarn create fuwari.
-
-        # pnpm
-        pnpm create fuwari@latest
-
-        # bun
-        bun create fuwari@latest
-
-        # deno
-        deno run -A npm:create-fuwari@latest
-        ```
+       bun create fuwari@latest
+       ```
 2. Untuk mengedit blog secara lokal, klon repositori kamu, jalankan `bun install` untuk instalasi dependensi.
     - Install [bun](https://bun.sh) jika belum punya.
 3. Edit file konfigurasi `src/config.ts` untuk menyesuaikan blog.
