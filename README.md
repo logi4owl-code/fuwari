@@ -35,13 +35,9 @@ A static blog template built with [Astro](https://astro.build).
 
 1. Create your blog repository:
     - [Generate a new repository](https://github.com/saicaca/fuwari/generate) from this template or fork this repository.
-    - Or run one of the following commands:
+    - Or run the following command:
        ```sh
-       npm create fuwari@latest
-       yarn create fuwari
-       pnpm create fuwari@latest
        bun create fuwari@latest
-       deno run -A npm:create-fuwari@latest
        ```
 2. To edit your blog locally, clone your repository, run `bun install` to install dependencies.
     - Install [bun](https://bun.sh) if you haven't.

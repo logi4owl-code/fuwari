@@ -22,13 +22,9 @@ Một mẫu blog tĩnh được xây bằng [Astro](https://astro.build).
 
 1. Tạo kho lưu trữ blog của bạn:
     - [Tạo một kho lưu trữ mới](https://github.com/saicaca/fuwari/generate) từ mẫu này hoặc fork kho lưu trữ này.
-    - Hoặc chạy một trong các lệnh sau:
+    - Hoặc chạy lệnh sau:
        ```sh
-       npm create fuwari@latest
-       yarn create fuwari
-       pnpm create fuwari@latest
        bun create fuwari@latest
-       deno run -A npm:create-fuwari@latest
        ```
 2. Để chỉnh sửa blog của bạn trên máy cục bộ, hãy clone kho lưu trữ của bạn, chạy lệnh `bun install` để cài đặt các phụ thuộc.
     - Cài đặt [bun](https://bun.sh) nếu chưa có.

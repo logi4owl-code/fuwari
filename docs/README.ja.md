@@ -27,20 +27,7 @@
 [create-fuwari](https://github.com/L4Ph/create-fuwari)を使用して、ローカルにプロジェクトを初期化します。
 
 ```sh
-# npm
-npm create fuwari@latest
-
-# yarn
-yarn create fuwari
-
-# pnpm
-pnpm create fuwari@latest
-
-# bun
 bun create fuwari@latest
-
-# deno
-deno run -A npm:create-fuwari@latest
 ```
 
 1. `src/config.ts` ファイルを編集する事でブログを自分好みにカスタマイズ出来ます。
